@@ -67,3 +67,20 @@ a{
     display: flex;
     background-color:rgb(24, 26, 27);
 }
+.main {
+    height: 500px;
+    background: url(/Images/main-wallpaper.jpg);
+    background-size: cover;
+    opacity: 0.90;
+}
+.main-block {
+    width: 400px;
+    height: 300px;
+    color: #ffffff;
+    background-color: black;
+    border-radius: 40px;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+    margin: auto;
+}
