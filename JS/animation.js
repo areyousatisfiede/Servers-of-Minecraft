@@ -7,3 +7,8 @@ element.addEventListener('mouseenter', function() {
 element.addEventListener('mouseleave', function() {
   element.classList.remove('animate__animated', 'animate__fadeIn');
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  var element = document.getElementById('main-block');
+  element.classList.add('animated');
+});

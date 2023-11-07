@@ -68,10 +68,15 @@ a{
     background-color:rgb(24, 26, 27);
 }
 .main {
-    height: 500px;
-    background: url(/Images/main-wallpaper.jpg);
+    height: 650px;
+    background: url(/Servers-of-Minecraft/Images/main-wallpaper.jpg);
     background-size: cover;
-    opacity: 0.90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin: 0;
 }
 .main-block {
     width: 400px;
@@ -79,8 +84,24 @@ a{
     color: #ffffff;
     background-color: black;
     border-radius: 40px;
-    box-sizing: border-box;
-    align-items: center;
-    position: relative;
-    margin: auto;
+    opacity: 1;
+    padding: 40px 30px 0 40px;
+}
+.main-block.animate__backInLeft {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+  
+.main-block.animate__backInLeft.animated {
+    opacity: 0.75 !important;
+}
+.contacts {
+    height: 400px;
+    background: url(/Servers-of-Minecraft/Images/contact-wallpaper.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.h1-contact{
+    padding: 30px 0 0 0;
 }
