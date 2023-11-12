@@ -50,11 +50,11 @@ a{
     transform: scaleX(0);
     transition: all .25s ease;
  }
- li:nth-child(1) {
+ .active {
     position: relative;
     color: white;
   }
- li:nth-child(1)::before {
+ .active::before {
     content: "";
     position: absolute;
     bottom: -7px;
@@ -67,9 +67,53 @@ a{
     display: flex;
     background-color:rgb(24, 26, 27);
 }
+.dropdown {
+    position: relative;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(24, 26, 27);
+    min-width: 100%;
+    margin-top: 7px;
+    padding: 15px;
+    z-index: 1;
+  }
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+.dropdown-content a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    color: #888;
+    font-size: 16px;
+    position: relative;
+  }
+.menu-link::after {
+    content: "";
+    background: #c821ff;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .25s ease;
+  }
+.menu-link:hover::after {
+    transform: scaleX(1);
+  }
+.dropdown-content a:hover {
+    color: #ffffff;
+  }
 .main {
     height: 650px;
-    background: url(/Servers-of-Minecraft/Images/main-wallpaper.jpg);
+    background: url(/Images/main-wallpaper.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -95,13 +139,77 @@ h1{
 .main-block.animate__backInLeft.animated {
     opacity: 0.75 !important;
 }
-.contacts {
-    height: 400px;
-    background: url(/Servers-of-Minecraft/Images/contact-wallpaper.jpg);
+.wereTeam {
+    height: 600px;
+    background: url(/Images/);
     background-size: cover;
     display: flex;
     justify-content: center;
 }
-.h1-contact{
-    padding: 30px 0 0 0;
+.team{
+    position: absolute;
+    margin: 80px;
+}
+.creators img{
+    width: 230px;
+    height: 300px;
+    border-radius: 20px;
+}
+.creator-img:nth-child(1){
+    margin: 0 15px 0 0;
+}
+.creators{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.creator-img,
+.helper-img {
+    text-align: center;
+}
+.img-container {
+    position: relative;
+    text-align: center;
+}
+.creator-p,
+.helper-p {
+    color: #c821ff;
+    border: 2px black solid;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.creators img:hover{
+    opacity: 0.3;
+    transition: all .25s ease;
+}
+.creators .img-container:hover .creator-p,
+.creators .img-container:hover .helper-p {
+    display: block;
+}
+.footer{
+    color: rgb(232, 230, 227);
+    font-size: 12px;
+    text-align: center;
+    height: 70px;
+}
+.footer p{
+    margin: 11px 0 0 0;
+}
+.links{
+    display: flex;
+    column-gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+.footer:hover{
+    color: #c821ff;
 }
