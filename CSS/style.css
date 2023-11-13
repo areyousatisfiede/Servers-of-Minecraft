@@ -285,13 +285,13 @@ h1{
     z-index: -999;
     height: 100%;
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 .rules-info {
-    width: 800px;
-    height: 650px;
+    width: 700px;
+    height: 450px;
     color: #ffffff;
     background-color: black;
     border-radius: 40px;
@@ -301,9 +301,10 @@ h1{
 }
 .rules-info h1 {
     text-align: center;
-    padding: 0 0 20px 0;
+    font-size: 25px;
+    padding: 0 0 15px 0;
 }
 .rules-info p {
-    font-size: 20px;
-    padding: 0 0 12px 0;
+    font-size: 12px;
+    padding: 0 0 15px 0;
 }
