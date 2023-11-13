@@ -274,3 +274,36 @@ h1{
 .contact-footer:hover{
     color: #c821ff;
 }
+.rules-main {
+    background-image: url(/Images/rules-img.png);
+    background-size: cover;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: -999;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.rules-info {
+    width: 800px;
+    height: 650px;
+    color: #ffffff;
+    background-color: black;
+    border-radius: 40px;
+    opacity: 1;
+    padding: 40px 30px 0 40px;
+    opacity: 0.8;
+}
+.rules-info h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+.rules-info p {
+    font-size: 20px;
+    padding: 0 0 12px 0;
+}
