@@ -113,7 +113,7 @@ a{
   }
 .main {
     height: 650px;
-    background: url(/Images/main-wallpaper.jpg);
+    background: url(/Images/main-wallpaper.png);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -149,9 +149,10 @@ h1{
 .team{
     position: absolute;
     margin: 80px;
+    color: #ffffff;
 }
 .creators img{
-    width: 230px;
+    width: 300px;
     height: 300px;
     border-radius: 20px;
 }
@@ -174,7 +175,7 @@ h1{
 .creator-p,
 .helper-p {
     color: #c821ff;
-    border: 2px black solid;
+    border: 2px white solid;
     border-radius: 20px;
     font-weight: bold;
     padding: 10px 10px 10px 10px;
@@ -197,6 +198,7 @@ h1{
     font-size: 12px;
     text-align: center;
     height: 70px;
+    background-color: black;
 }
 .footer p{
     margin: 11px 0 0 0;
@@ -211,5 +213,64 @@ h1{
     text-decoration: underline;
 }
 .footer:hover{
+    color: #c821ff;
+}
+.wereTeam {
+    background-image: url(/Images/fouter-img.png);
+}
+.contact-main {
+    background-image: url(/Images/contact-main.jpg);
+    background-size: cover;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: -999;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info {
+    width: 400px;
+    height: 300px;
+    color: #ffffff;
+    background-color: black;
+    border-radius: 40px;
+    opacity: 1;
+    padding: 40px 30px 0 40px;
+    text-align: center;
+    opacity: 0.8;
+}
+.info-logo {
+    width: 30px;
+    height: 30px;
+    padding: 0 20px 0 0;
+}
+.contact-footer {
+    color: rgb(232, 230, 227);
+    font-size: 12px;
+    text-align: center;
+    height: 70px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.contact-footer p{
+    margin: 11px 0 0 0;
+}
+.contact-links{
+    display: flex;
+    column-gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact-footer a:hover{
+    text-decoration: underline;
+}
+.contact-footer:hover{
     color: #c821ff;
 }
