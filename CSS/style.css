@@ -254,7 +254,7 @@ h1{
     text-align: center;
     height: 70px;
     background-color: black;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -307,17 +307,10 @@ h1{
     padding: 0 0 15px 0;
 }
 .allMods{
-    background-image: url(/Images/mods-wallpaper.jpg);
-    background-size: cover;
-    background-size: 100%;
-    display: block;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-    z-index: -999;
-    width: 100%;
+    background-color: #2c033a;
     display: flex;
     justify-content: center;
+    height: 100%;
 }
 .container{
     opacity: 0.9;
@@ -329,28 +322,51 @@ h1{
     margin-top: 100px;
     border-radius: 20px;
 }
-.technoinside{
+.modsinside{
     display: flex;
     padding: 20px 0 0 20px;
 }
-.technoinside h1{
+.modsinside h1{
     padding: 10px 0 0 13px;
 }
-.technotext{
+.modstext{
     padding: 0 0 0 15px;
 }
-.technoonline{
-    margin: 0 0 0 15px;
+.modstext p{
+    margin: 15px 0 0 0;
+}
+.online{
+    margin: 20px 0 0 15px;
+    width: 100px;
+}
+.online h2{
+    padding: 10px 10px 10px 12px;
+    border: 2px #21bcff solid;
+    background-color: #00eeff;
+    color: rgb(0, 0, 0);
     box-sizing: border-box;
     border-radius: 10px;
-    padding: 0 0 0 0;
-    display: flex;
-    align-items: center;
+    margin: 0;
 }
 .btn-more {
-    margin-left: auto;
-    margin: 0 50px 0 auto;
-    border: 2px #c821ff solid;
+    float: right;
+    margin: 35px 20px 0 0;
+}
+.btn-more a{
+    background-color: #00eeff;
+    font-weight: bold;
+    padding: 15px 10px 15px 15px;
+    border: 2px #21bcff solid;
+    color: rgb(3, 4, 0);
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0;
+}
+.btn-more a:hover{
+    background-color: #00ccff;
+    border: 2px #00ccff solid;
+    transition: all 0.3s;
 }
 .magic{
     background-color: rgb(216, 39, 216);
@@ -393,4 +409,5 @@ h1{
     height: 250px;
     margin-top: 60px;
     border-radius: 20px;
+    margin-bottom: 50px;
 }
