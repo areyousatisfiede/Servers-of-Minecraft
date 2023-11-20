@@ -20,10 +20,67 @@ a{
     text-decoration: none;
     color: inherit;
 }
+.headerBurger {
+    display: none;
+    position: relative;
+    margin-right: 30px;
+    margin-top: 15px;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+    top: 10px;
+    right: 10px;
+}
+.headerBurger:hover{
+    cursor: pointer;
+}
+
+.headerBurger span {
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #fff;
+}
+.headerBurger::before,
+.headerBurger::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.headerBurger::before {
+    top: 0;
+}
+.headerBurger::after{
+    bottom: 0;
+}
+.headerBurger.on span {
+    transform: scale(0);
+}
+.headerBurger.on::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+.headerBurger.on::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+.open{
+    display: flex !important;
+}
 .nav-list{
     list-style-type: none;
     display: flex;
     align-items: center;
+}
+.nav-list li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .nav-list li {
     margin: 6px 80px 0 0;
@@ -410,4 +467,69 @@ h1{
     margin-top: 60px;
     border-radius: 20px;
     margin-bottom: 50px;
+}
+@media (max-width: 806px) {
+    .headerBurger{
+        display: flex;
+        margin-left: auto;
+    }
+    .nav-list {
+        border-radius: 10px;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+        position: absolute;
+        height: 28%;
+        width: 30%;
+        top: 53px;
+        bottom: 40px;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        background-color: rgb(24, 26, 27);
+    }
+    .nav-list .nav-list-link, .active{
+        line-height: 40px;
+        padding: 5px;
+        margin-left: 15px;
+    }
+    .nav-list .dropdown-content{
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+    .nav-list-link::after {
+        bottom: 5px;
+     }
+     .active::before {
+        bottom: 5px;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        border-radius: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgb(24, 26, 27);
+        min-width: 109%;
+        margin-top: 1px;
+        padding: 15px;
+        z-index: 1;
+      }
+      .creators img{
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+    }
+}
+@media (max-width: 400px) {
+    .nav-list {
+        height: 34%;
+        width: 30%;
+    }
+    .creators img{
+        width: 170px;
+        height: 170px;
+    }
 }
