@@ -521,6 +521,54 @@ h1{
         width: 200px;
         height: 200px;
         border-radius: 20px;
+    } 
+    .container{
+        width: 300px;
+    }
+    .container p{
+        font-size: 19px;
+    }
+    .techno {
+        height: 400px;
+        width: 300px;
+        text-align: center;
+    }
+    .magic{
+        height: 400px;
+        width: 300px;
+        text-align: center;
+    }
+    .technomagic{
+        height: 400px;
+        width: 300px;
+        text-align: center;
+    }
+    .minigames{
+        height: 400px;
+        width: 300px;
+        text-align: center;
+    }
+    .botania{
+        height: 400px;
+        width: 300px;
+        text-align: center;
+    }
+    .pixelmon{
+        height: 400px;
+        width: 300px;
+        text-align: center;
+    }
+    .spaceX{
+        height: 400px;
+        width: 300px;
+        text-align: center;
+    }
+    .rules-info{
+        width: 300px;
+        height: 600px;
+    }
+    .contact-info{
+        width: 250px;
     }
 }
 @media (max-width: 400px) {
@@ -532,4 +580,10 @@ h1{
         width: 170px;
         height: 170px;
     }
+
+}
+@media (max-width: 310px){
+   .contact-info{
+       height: 350px;
+    }   
 }
