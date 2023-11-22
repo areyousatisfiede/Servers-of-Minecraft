@@ -521,54 +521,98 @@ h1{
         width: 200px;
         height: 200px;
         border-radius: 20px;
-    } 
+    }
+}
+@media (max-width: 803px) {
+    .rules-info{
+        width: 550px;
+        height: 480px;
+    }
+}
+@media (max-width: 635px) {
+    .rules-info{
+        width: 300px;
+        height: 600px;
+    }
+}
+@media (max-width: 620px) {
     .container{
         width: 300px;
     }
     .container p{
         font-size: 19px;
     }
+    .allMods{
+        display: flex;
+        justify-content: none;
+        padding-right: 90px;
+        height: 100%;
+    }
     .techno {
-        height: 400px;
-        width: 300px;
-        text-align: center;
+        height: 350px;
+        width: 400px;
     }
     .magic{
-        height: 400px;
-        width: 300px;
-        text-align: center;
+        height: 330px;
+        width: 400px;
     }
     .technomagic{
-        height: 400px;
-        width: 300px;
-        text-align: center;
+        height: 330px;
+        width: 400px;
     }
     .minigames{
-        height: 400px;
-        width: 300px;
-        text-align: center;
+        height: 330px;
+        width: 400px;
     }
     .botania{
-        height: 400px;
-        width: 300px;
-        text-align: center;
+        height: 310px;
+        width: 400px;
     }
     .pixelmon{
-        height: 400px;
-        width: 300px;
-        text-align: center;
+        height: 330px;
+        width: 400px;
     }
     .spaceX{
-        height: 400px;
-        width: 300px;
-        text-align: center;
+        height: 350px;
+        width: 400px;
     }
-    .rules-info{
-        width: 300px;
-        height: 600px;
+}
+@media (max-width: 440px) {
+    .container p{
+        font-size: 19px;
     }
-    .contact-info{
-        width: 250px;
+    .allMods{
+        display: flex;
+        padding-left: 35px;
+        height: 100%;
+    }
+    .techno {
+        height: 360px;
+        width: 350px;
+    }
+    .magic{
+        height: 340px;
+        width: 350px;
+    }
+    .technomagic{
+        height: 340px;
+        width: 350px;
+    }
+    .minigames{
+        height: 330px;
+        width: 350px;
+    }
+    .botania{
+        height: 340px;
+        width: 350px;
+    }
+    .pixelmon{
+        height: 340px;
+        width: 350px;
+    }
+    .spaceX{
+        height: 355px;
+        width: 350px;
     }
 }
 @media (max-width: 400px) {
@@ -580,7 +624,6 @@ h1{
         width: 170px;
         height: 170px;
     }
-
 }
 @media (max-width: 310px){
    .contact-info{
