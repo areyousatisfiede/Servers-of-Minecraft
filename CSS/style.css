@@ -484,7 +484,9 @@ h1{
     margin-bottom: 50px;
 }
 .mods-main {
-    background-color: rgb(35, 29, 217);
+    background-image: url(/Images/techno-background.png);
+    background-size: cover; 
+    background-attachment: fixed; 
     display: flex;
     justify-content: center;
     align-items: center;
