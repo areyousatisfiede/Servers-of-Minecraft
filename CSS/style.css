@@ -379,7 +379,9 @@ h1{
     padding: 0 0 15px 0;
 }
 .allMods{
-    background-image: url(/Images/bedrock.jpg);
+    background-image: url(/Images/allMod-wallpaper.jpg);
+    background-size: cover; 
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     height: 100%;
@@ -589,11 +591,53 @@ h1{
     color: rgb(104, 0, 100);
     margin-bottom: 10px;
 }
+.mod-details{
+    margin-right: 50px;
+}
 .mod-desctiption{
     font-size: 18px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-@media (max-width: 806px) {
+.download-launcher{
+    color: #ffffffe2;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border-radius: 4px;
+    background-color: #55555595;
+    transition: all .25s ease;
+    display: flex;
+    white-space: nowrap;
+}
+.download-launcher:hover {
+    background-color: #bb23c9;
+    color: #fff;
+}
+.download-main{
+    height: 100vh;
+    background-image: url(/Images/download-wallpaper.jpg);
+    background-size: cover; 
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.download-container{
+    width: 400px;
+    height: 300px;
+    color: #ffffff;
+    background-color: black;
+    border-radius: 40px;
+    opacity: 1;
+    padding: 40px 30px 0 40px;
+}
+.download-container a{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 1070px) {
     .headerBurger{
         display: flex;
         margin-left: auto;
@@ -605,14 +649,17 @@ h1{
         flex-direction: column;
         margin-left: auto;
         position: absolute;
-        height: 28%;
-        width: 30%;
+        height: 300px;
+        width: 200px;
         top: 53px;
         bottom: 40px;
         left: 0;
         right: 0;
         z-index: 50;
         background-color: rgb(24, 26, 27);
+    }
+    .download-launcher{
+        margin-left: 15px;
     }
     .nav-list .nav-list-link, .active{
         line-height: 40px;
@@ -666,6 +713,14 @@ h1{
         height: 480px;
     }
 }
+@media (max-width: 760px) {
+    .mods-container{
+        width: 500px;
+    }
+    .img-techno img{
+        width: 500px;
+    }
+}
 @media (max-width: 635px) {
     .rules-info{
         width: 300px;
@@ -712,6 +767,31 @@ h1{
     .spaceX{
         height: 350px;
         width: 400px;
+    }
+}
+@media (max-width: 605px) {
+    .download-launcher{
+        margin-left: 15px;
+    }
+}
+@media (max-width: 550px) {
+    .mods-container{
+        width: 350px;
+    }
+    .img-techno img{
+        width: 350px;
+    }
+    .mod-desctiption{
+        font-size: 12px;
+    }
+    .info-table{
+        padding-right: 15px;
+    }
+    .info-table td{
+        font-size: 14px;
+    }
+    .head{
+        font-size: 20px;
     }
 }
 @media (max-width: 440px) {
@@ -762,12 +842,11 @@ h1{
     .dropdown-content{
         width: 30px;
     }
+    .download-launcher{
+        margin-left: 15px;
+    }
 }
 @media (max-width: 400px) {
-    .nav-list {
-        height: 30%;
-        width: 30%;
-    }
     .dropdown-content a{
         display: flex;
         align-items: center;
@@ -780,11 +859,6 @@ h1{
     .creators img{
         width: 170px;
         height: 170px;
-    }
-}
-@media (max-width: 380px) {
-    .nav-list{
-        height: 35%;
     }
 }
 @media (max-width: 310px){
